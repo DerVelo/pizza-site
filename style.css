@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rye&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Bodoni Moda", serif;
+  color: white;
+  background-color: #1a1a1a;
+}
+
+.hero {
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  width: fit-content;
+  padding-bottom: 2px;
+  border-bottom: red solid 2px;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.titel {
+  font-family: "Rye", serif;
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: red;
+  padding: 1rem 1.5rem;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  margin-top: 2rem;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: transparent;
+  border-color: red;
+  transition: smooth;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.button-reverse {
+  display: inline-block;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  margin-top: 2rem;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+.button-reverse:hover {
+  background-color: red;
+  border-color: red;
+  transition: smooth;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 4rem;
+  gap: 2rem;
+}
+
+.nav-items {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navitems:hover {
+  color: red;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-content {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.image-large {
+  min-width: 50%;
+}
+
+.image-small {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* nicht in der Aufgabenstellung, bitte ignorieren */
+/* .button-center {
+  display: flex;
+  justify-content: center;
+} */
+
+.opening {
+  margin: 2rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("info.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.timetable {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.contact-content {
+  gap: 1rem;
+}
+
+.contact-info {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenttext {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+footer {
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 6rem;
+  padding: 3rem 0;
+  gap: 3rem;
+}
+
+.footer-links {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-item {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .titel {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .opening {
+    margin: 6rem 0;
+    padding: 6rem 0 6rem 0;
+  }
+
+  .contact-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-img {
+    max-width: 50%;
+  }
+
+  .footer-links {
+    flex-direction: row;
+  }
+}
